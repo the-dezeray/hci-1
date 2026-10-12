@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Companies and Intellectual Property Authority (CIPA)</title>
+<!-- Tailwind CSS CDN with forms and container queries plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            cipa: {
+              topbar: '#1f385c',
+              blue: '#005596',
+              lightBlue: '#0072bc',
+              accentRed: '#e41f26',
+              grayBg: '#f4f5f7',
+              grayBanner: '#bcc3c9',
+              dropdownBg: '#eeeeee',
+            }
+          }
+        }
+      }
+    };
+  </script>
+<!-- Custom CSS for specific patterns & styling -->
+<style data-purpose="layout-patterns">
+    /* Geometric chevron tessellation pattern replicating Botswana basket / diamond national branding */
+    .cipa-pattern-banner {
+      background-color: #0264b3;
+      background-image: 
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.12) 0%, transparent 60%),
+        repeating-linear-gradient(45deg, rgba(0, 77, 140, 0.45) 0px, rgba(0, 77, 140, 0.45) 24px, transparent 24px, transparent 48px),
+        repeating-linear-gradient(-45deg, rgba(0, 114, 188, 0.35) 0px, rgba(0, 114, 188, 0.35) 24px, transparent 24px, transparent 48px);
+      background-size: cover;
+    }
+    
+    /* Dropped shadow for quick access cards and cards */
+    .service-nav-shadow {
+      box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.12);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-slate-700 font-sans antialiased min-w-[1280px]">
+<!-- BEGIN: TopNotificationBar -->
+<section class="bg-[#1f385c] text-white text-center py-2 px-4 text-[13px] font-normal tracking-wide" data-purpose="top-announcement">
+<div class="max-w-7xl mx-auto leading-tight">
+      The companies have been granted six months extension to file the constitution in addition to the 12 months initially given. The extension has been granted from 16 March 2026 to 30 September 2026.
+    </div>
+</section>
+<!-- END: TopNotificationBar -->
+<!-- BEGIN: MainHeader -->
+<header class="bg-white border-b border-gray-100 relative z-30">
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<!-- CIPA Official Logo -->
+<a class="flex items-center gap-3.5 group select-none" href="#">
+<div class="relative">
+<span class="text-[52px] font-black tracking-tighter text-[#005596] leading-none block italic font-sans scale-y-110">CIPA</span>
+<div class="h-[2px] bg-[#e41f26] w-full mt-0.5"></div>
+<span class="text-[7.5px] uppercase font-bold tracking-widest text-[#005596] block pt-0.5">PROTECTING BUSINESS INTERESTS</span>
+</div>
+<div class="border-l border-gray-300 pl-3 leading-[1.15] text-[#005596] font-semibold text-[13px]">
+<div class="tracking-tight uppercase">COMPANIES</div>
+<div class="tracking-tight uppercase text-[11px] font-normal text-slate-600">AND INTELLECTUAL</div>
+<div class="tracking-tight uppercase">PROPERTY AUTHORITY</div>
+</div>
+</a>
+<!-- Right Navigation & Quick Links -->
+<div class="flex flex-col items-end">
+<!-- Main Menu Bar -->
+<nav class="flex items-center space-x-6 text-[12.5px] font-extrabold text-[#1a2836] tracking-wide relative">
+<a class="hover:text-[#005596] flex items-center gap-1 transition-colors" href="#">
+            START A BUSINESS <i class="fa-solid fa-caret-down text-[10px] text-gray-500"></i>
+</a>
+<a class="hover:text-[#005596] flex items-center gap-1 transition-colors" href="#">
+            IP PROTECTION <i class="fa-solid fa-caret-down text-[10px] text-gray-500"></i>
+</a>
+<a class="hover:text-[#005596] flex items-center gap-1 transition-colors" href="#">
+            COMPLIANCE <i class="fa-solid fa-caret-down text-[10px] text-gray-500"></i>
+</a>
+<a class="hover:text-[#005596] flex items-center gap-1 transition-colors" href="#">
+            AML/CFT <i class="fa-solid fa-caret-down text-[10px] text-gray-500"></i>
+</a>
+<!-- QUICK LINKS active dropdown -->
+<div class="relative group">
+<button class="text-[#005596] flex items-center gap-1 cursor-pointer font-extrabold focus:outline-none">
+              QUICK LINKS <i class="fa-solid fa-caret-down text-[10px] text-[#005596]"></i>
+</button>
+<!-- Open Dropdown Menu as displayed in reference image -->
+<div class="absolute left-0 mt-3 w-56 bg-[#f2f2f2] text-slate-700 shadow-md border-t border-gray-200 text-xs py-1.5 z-50" data-purpose="quick-links-dropdown">
+<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="#">Forms &amp; Downloads</a>
+<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="#">Frequently Asked Questions</a>
+<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="#">CIPA Policies</a>
+<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="#">CIPA Acts</a>
+<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="#">CIPA Publications</a>
+</div>
+</div>
+<a class="hover:text-[#005596] transition-colors" href="#">ABOUT US</a>
+</nav>
+<!-- Sub Links (OBRS) -->
+<div class="mt-3.5 text-[11px] text-gray-600 font-medium tracking-tight">
+<a class="hover:underline text-gray-800" href="#">Login to OBRS</a>
+<span class="mx-1.5 text-gray-400">|</span>
+<a class="hover:underline text-gray-800" href="#">Create Profile</a>
+<span class="mx-1.5 text-gray-400">|</span>
+<a class="hover:underline text-gray-800" href="#">Search the Register</a>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroChevronBanner -->
+<section class="cipa-pattern-banner w-full h-[180px] relative overflow-hidden" data-purpose="decorative-banner">
+<!-- Diamond/zigzag overlay effect -->
+<div class="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-blue-600/10 to-blue-900/50 pointer-events-none"></div>
+</section>
+<!-- END: HeroChevronBanner -->
+<!-- BEGIN: QuickAccessNavigation -->
+<div class="max-w-5xl mx-auto px-4 -mt-10 relative z-20">
+<div class="bg-white rounded border border-gray-200 service-nav-shadow grid grid-cols-5 divide-x divide-gray-200 py-3">
+<!-- Procurement -->
+<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
+<i class="fa-solid fa-gear text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
+<span class="text-[11.5px] font-bold text-slate-800">Procurement</span>
+</a>
+<!-- Employment -->
+<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
+<i class="fa-regular fa-newspaper text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
+<span class="text-[11.5px] font-bold text-slate-800">Employment</span>
+</a>
+<!-- Media & Publications -->
+<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
+<i class="fa-solid fa-video text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
+<span class="text-[11.5px] font-bold text-slate-800">Media &amp; Publications</span>
+</a>
+<!-- IP Journal -->
+<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
+<i class="fa-regular fa-file-lines text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
+<span class="text-[11.5px] font-bold text-slate-800">IP Journal</span>
+</a>
+<!-- Information Center -->
+<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
+<i class="fa-solid fa-circle-info text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
+<span class="text-[11.5px] font-bold text-slate-800">Information Center</span>
+</a>
+</div>
+</div>
+<!-- END: QuickAccessNavigation -->
+<!-- BEGIN: MainContentSection -->
+<main class="max-w-6xl mx-auto px-4 my-10">
+<div class="bg-white border border-gray-200 rounded shadow-sm overflow-hidden flex flex-col md:flex-row relative">
+<!-- Left Side: Professional Businesswoman with Laptop -->
+<div class="md:w-5/12 relative overflow-hidden bg-slate-900 min-h-[580px] flex items-end">
+<img alt="Professional African businesswoman working on constitution filing online" class="absolute inset-0 w-full h-full object-cover object-left-top contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoR6zTRQtUAQJMuxiSKG9knrFc0It1r7XIjvtID48gMCnHFwZlADWTBO978yVUnUqnhr3dzWNQtzT6wBaTOhQGKKQrrBT8c4eqBKq9DEIOhaEQLoFlOL6geTOoK8FHb8UwA1OR4xPy4fU0VsVArIc5NNmAmOk4g6MTscF33c-7sv6MJgLXCO5ZRT93V-PiSvSEDbIRFsoZ7Jt1RjMK5qle9GvMvkk2mnslawwRDwzafymzPTbvPNw"/>
+<!-- Tech/Hologram glowing overlay effect matching reference -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#024479]/90 via-transparent to-red-600/20 mix-blend-screen pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-white/95 pointer-events-none"></div>
+<!-- Watermark / overlay text from background -->
+<div class="relative z-10 p-5 text-white/50 text-[10px] uppercase font-mono">
+          OBRS Portal System Active
+        </div>
+</div>
+<!-- Right Side: Regulatory & Constitution Information -->
+<div class="md:w-7/12 p-8 lg:p-10 text-slate-800 flex flex-col justify-between relative bg-white">
+<!-- Header -->
+<div>
+<h1 class="text-[17px] lg:text-[19px] font-extrabold text-[#005596] leading-snug tracking-tight mb-3 uppercase">
+            SUBMISSION OF COMPULSORY CONSTITUTIONS AND BENEFICIAL OWNERSHIP INFORMATION
+          </h1>
+<!-- Intro Paragraph -->
+<div class="relative mb-5">
+<!-- Floating Decorative Computer Monitor Icon Badge -->
+<div class="float-left mr-3 mb-1 w-14 h-14 rounded-full border-2 border-orange-400/80 bg-orange-50/60 flex items-center justify-center text-slate-700 shadow-sm">
+<i class="fa-solid fa-desktop text-2xl text-slate-800"></i>
+</div>
+<p class="text-[12px] leading-relaxed text-slate-700 text-justify">
+              All companies are now required to have a constitution. This applies to all new registrations as well as all existing companies. A template to guide customers to develop their constitutions has been provided on the Information Centre section of the CIPA website <a class="text-blue-600 hover:underline" href="https://www.cipa.co.bw" target="_blank">www.cipa.co.bw</a>. The submission fee for constitutions is P500 for all company types.
+            </p>
+</div>
+<div class="clear-both"></div>
+<!-- Section: Beneficial Ownership -->
+<div class="relative mb-4">
+<h2 class="text-[13px] font-bold text-slate-900 mb-1">Beneficial Ownership</h2>
+<!-- Floating Bar Chart Badge -->
+<div class="float-left mr-3 mb-1 w-12 h-12 rounded-full border-2 border-blue-400/80 bg-blue-50/60 flex items-center justify-center text-slate-700 shadow-sm">
+<i class="fa-solid fa-chart-column text-xl text-slate-800"></i>
+</div>
+<p class="text-[12px] leading-relaxed text-slate-700 text-justify">
+              All new and existing companies must declare persons having control or ownership over the company. A beneficial owner must be a natural person. Where a company or other legal entity such as a trust or association is identified as having a link to <a class="text-blue-600 hover:underline" href="#">BO information</a>, a natural person having some form of ultimate control, either directly or indirectly, over the identified legal entity has to be identified. In addition to providing the personal details of beneficial owners, the nature of their interest in the company must be declared. Please refer to the FIA Act for a detailed description of beneficial ownership.
+            </p>
+</div>
+<div class="clear-both"></div>
+<!-- Mechanisms Info Block -->
+<div class="mt-4 pt-2">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 rounded-full border border-gray-300 bg-gray-50 flex items-center justify-center shrink-0">
+<i class="fa-solid fa-tablet-screen-button text-gray-500 text-lg"></i>
+</div>
+<p class="text-[12.5px] font-bold text-blue-700">
+                Mechanisms that identify and describe the following can be found at:
+              </p>
+</div>
+<div class="pl-12">
+<a class="text-[12px] font-semibold text-blue-700 hover:underline block mb-3" href="https://www.cipa.co.bw/what-is-aml-cft" target="_blank">
+                https://www.cipa.co.bw/what-is-aml-cft
+              </a>
+<ol class="list-decimal pl-5 text-[12px] space-y-1.5 text-slate-700">
+<li>Different types, forms and basic features of legal persons in Botswana.</li>
+<li>Processes for the creation of legal persons in Botswana.</li>
+<li>Processes for obtaining and recording of basic and beneficial ownership information related to legal persons</li>
+</ol>
+</div>
+</div>
+</div>
+<!-- Footer / Contact block inside hero card -->
+<div class="mt-8 pt-4 border-t border-gray-100 flex flex-col items-end text-[12px] text-slate-800 font-semibold space-y-1">
+<div>Call Centre: 3673797/758/748/783</div>
+<div>WhatsApp: 73263804</div>
+</div>
+</div>
+</div>
+</main>
+<!-- END: MainContentSection -->
+<!-- BEGIN: BottomCalloutBanner -->
+<footer class="mt-12 mb-16 text-center">
+<div class="bg-[#bcc3c9] text-white py-3 px-6 max-w-5xl mx-auto rounded-sm shadow-inner">
+<h2 class="text-xl md:text-2xl font-bold tracking-tight text-white drop-shadow-sm">
+        Ready to enjoy company registration from a click of button!!
+      </h2>
+</div>
+<div class="mt-4">
+<a class="text-sm font-semibold text-blue-700 hover:underline tracking-wide" href="#">
+        Online Business Registration System (OBRS)
+      </a>
+</div>
+</footer>
+<!-- END: BottomCalloutBanner -->
+</body></html>
