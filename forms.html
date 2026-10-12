@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en"><head>
 <meta charset="utf-8"/>
@@ -56,38 +56,25 @@
 </a>
 <!-- Primary Navigation Links -->
 <nav class="hidden md:flex items-center space-x-7 text-[12.5px] font-bold tracking-wide text-gray-800" data-purpose="primary-navigation">
-<div class="flex items-center gap-1 cursor-pointer hover:text-[#0266b3] transition-colors">
-<span>START A BUSINESS</span>
-<svg class="w-3 h-3 text-gray-700" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</div>
-<div class="flex items-center gap-1 cursor-pointer hover:text-[#0266b3] transition-colors">
-<span>IP PROTECTION</span>
-<svg class="w-3 h-3 text-gray-700" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</div>
-<div class="flex items-center gap-1 cursor-pointer hover:text-[#0266b3] transition-colors">
-<span>COMPLIANCE</span>
-<svg class="w-3 h-3 text-gray-700" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</div>
-<div class="flex items-center gap-1 cursor-pointer hover:text-[#0266b3] transition-colors">
-<span>AML/CFT</span>
-<svg class="w-3 h-3 text-gray-700" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</div>
-<div class="flex items-center gap-1 cursor-pointer hover:text-[#0266b3] transition-colors">
-<span>QUICK LINKS</span>
-<svg class="w-3 h-3 text-gray-700" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</div>
-<a class="cursor-pointer hover:text-[#0266b3] transition-colors" href="#">ABOUT US</a>
+<a class="hover:text-[#0266b3] transition-colors" href="business-name.html">START A BUSINESS</a>
+<a class="hover:text-[#0266b3] transition-colors" href="trademark.html">IP PROTECTION</a>
+<a class="hover:text-[#0266b3] transition-colors" href="home.html#how-to-comply">COMPLIANCE</a>
+<a class="text-[#0266b3] transition-colors" href="forms.html">FORMS &amp; DOWNLOADS</a>
+<a class="hover:text-[#0266b3] transition-colors" href="home.html#obrs">ABOUT US</a>
 </nav>
+<!-- Mobile menu button -->
+<button id="mobile-menu-btn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50" aria-expanded="false" aria-label="Open menu" type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Mobile nav panel -->
+<div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white px-6 py-4 space-y-1 text-sm font-semibold text-slate-800">
+<a class="block py-2 hover:text-[#0266b3]" href="home.html#how-to-comply">Start a business</a>
+<a class="block py-2 hover:text-[#0266b3]" href="#">IP Protection</a>
+<a class="block py-2 hover:text-[#0266b3]" href="#annual-return-forms">Compliance</a>
+<a class="block py-2 hover:text-[#0266b3]" href="https://www.cipa.co.bw/what-is-aml-cft" rel="noopener" target="_blank">AML/CFT</a>
+<a class="block py-2 text-[#0266b3]" href="forms.html">Forms &amp; Downloads</a>
+<a class="block py-2 hover:text-[#0266b3]" href="home.html">Home</a>
 </div>
 </header>
 <!-- END: MainHeader -->
@@ -103,30 +90,46 @@
 <span class="text-slate-500">Forms &amp; Downloads</span>
 </nav>
 <!-- Search & Filter Controls -->
-<section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80" data-purpose="search-and-filters">
+<section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80" data-purpose="search-and-filters" aria-label="Search and filter forms">
 <div class="max-w-3xl">
 <div class="relative">
 <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-2xl pointer-events-none">search</span>
-<input class="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-sm md:text-base text-gray-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0266b3]/30 focus:border-[#0266b3] transition-all" placeholder="Search forms (e.g. Private Company constitution)" type="text"/>
+<input id="forms-search" class="w-full pl-12 pr-11 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-sm md:text-base text-gray-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0266b3]/30 focus:border-[#0266b3] transition-all" placeholder="Search forms (e.g. Private Company constitution)" type="search" aria-label="Search forms" autocomplete="off"/>
+<button id="search-clear" class="hidden absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-600 items-center justify-center" aria-label="Clear search" type="button">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
 </div>
 <!-- Filter chips -->
-<div class="flex items-center gap-2 mt-4 flex-wrap">
+<div class="flex items-center gap-2 mt-4 flex-wrap" role="group" aria-label="Filter forms by category">
 <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-1">Filter by:</span>
-<button class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#0266b3] text-white shadow-sm transition hover:bg-[#014f8c]" type="button">
+<button class="filter-chip px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#0266b3] text-white shadow-sm transition hover:bg-[#014f8c]" type="button" data-filter="all" aria-pressed="true">
           All
         </button>
-<button class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200 transition" type="button">
+<button class="filter-chip px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200 transition" type="button" data-filter="constitution" aria-pressed="false">
           Constitution Templates
         </button>
-<button class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200 transition" type="button">
+<button class="filter-chip px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200 transition" type="button" data-filter="beneficial" aria-pressed="false">
           Beneficial Owner Forms
         </button>
-<button class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200 transition" type="button">
+<button class="filter-chip px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200 transition" type="button" data-filter="restoration" aria-pressed="false">
           Restoration Forms
         </button>
+<button class="filter-chip px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200 transition" type="button" data-filter="annual" aria-pressed="false">
+          Annual Returns
+        </button>
 </div>
+<p id="results-count" class="mt-3 text-xs text-slate-500" role="status" aria-live="polite">Showing 16 of 16 forms</p>
 </div>
 </section>
+<!-- Empty state (shown when no forms match) -->
+<div id="no-results" class="hidden bg-white rounded-2xl p-10 text-center border border-dashed border-slate-300 shadow-sm">
+<div class="w-12 h-12 mx-auto rounded-full bg-slate-100 flex items-center justify-center text-slate-400 mb-3">
+<span class="material-symbols-outlined text-2xl">search_off</span>
+</div>
+<h2 class="text-base font-bold text-gray-900">No forms found</h2>
+<p class="text-sm text-slate-500 mt-1">Try a different keyword, or clear the search to browse everything.</p>
+<button id="reset-filters" class="mt-4 px-4 py-2 rounded-lg bg-[#0266b3] hover:bg-[#014f8c] text-white text-xs font-semibold transition" type="button">Reset search &amp; filters</button>
+</div>
 <!-- Support / Help Banner -->
 <section class="bg-gradient-to-r from-emerald-50 via-teal-50 to-sky-50 border border-emerald-200/80 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm" data-purpose="support-banner">
 <div class="flex items-center gap-3.5">
@@ -138,7 +141,7 @@
 <p class="text-xs text-slate-600">Get quick assistance directly from our company registration support team.</p>
 </div>
 </div>
-<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-medium text-xs rounded-xl shadow-sm transition whitespace-nowrap self-start sm:self-auto" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-medium text-xs rounded-xl shadow-sm transition whitespace-nowrap self-start sm:self-auto" href="https://wa.me/26773263804?text=Hello%20CIPA%2C%20I%20need%20help%20choosing%20a%20company%20type%20and%20downloading%20the%20right%20form." rel="noopener noreferrer" target="_blank">
 <svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
 </svg>
@@ -146,7 +149,7 @@
 </a>
 </section>
 <!-- SECTION A: Constitution Templates -->
-<section class="space-y-4 scroll-mt-6" data-purpose="constitution-templates" id="constitution-templates">
+<section class="space-y-4 scroll-mt-6" data-purpose="constitution-templates" data-category="constitution" id="constitution-templates">
 <div class="flex items-center justify-between pb-1 border-b border-slate-200">
 <div class="flex items-center gap-2.5">
 <h2 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Constitution Templates</h2>
@@ -156,7 +159,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 <!-- Card 1 -->
-<article class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition flex flex-col justify-between">
+<article class="form-item bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition flex flex-col justify-between">
 <div>
 <div class="flex items-start gap-3.5 mb-3">
 <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0">
@@ -164,7 +167,7 @@
 </div>
 <div>
 <h3 class="text-sm sm:text-base font-bold text-gray-900 leading-snug">
-                Constitution Template – Private Company Limited by Shares
+                Constitution Template â€“ Private Company Limited by Shares
               </h3>
 <p class="text-xs text-slate-600 mt-1">
                 For companies owned by shareholders, with no public share offering
@@ -175,7 +178,7 @@
 <div class="pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
 <div class="flex items-center gap-2 text-[11px] text-slate-500">
 <span class="px-2 py-0.5 bg-slate-100 rounded text-slate-700 font-medium">PDF, 240 KB</span>
-<span>•</span>
+<span>â€¢</span>
 <span>Last updated: Feb 2025</span>
 </div>
 <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0266b3] text-white hover:bg-[#014f8c] text-xs font-medium transition shadow-sm" href="#">
@@ -185,7 +188,7 @@
 </div>
 </article>
 <!-- Card 2 -->
-<article class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition flex flex-col justify-between">
+<article class="form-item bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition flex flex-col justify-between">
 <div>
 <div class="flex items-start gap-3.5 mb-3">
 <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0">
@@ -193,7 +196,7 @@
 </div>
 <div>
 <h3 class="text-sm sm:text-base font-bold text-gray-900 leading-snug">
-                Constitution Template – Public Company Limited by Shares
+                Constitution Template â€“ Public Company Limited by Shares
               </h3>
 <p class="text-xs text-slate-600 mt-1">
                 For entities raising capital publicly with freely transferable shares
@@ -204,7 +207,7 @@
 <div class="pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
 <div class="flex items-center gap-2 text-[11px] text-slate-500">
 <span class="px-2 py-0.5 bg-slate-100 rounded text-slate-700 font-medium">PDF, 280 KB</span>
-<span>•</span>
+<span>â€¢</span>
 <span>Last updated: Feb 2025</span>
 </div>
 <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0266b3] text-white hover:bg-[#014f8c] text-xs font-medium transition shadow-sm" href="#">
@@ -214,7 +217,7 @@
 </div>
 </article>
 <!-- Card 3 -->
-<article class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition flex flex-col justify-between">
+<article class="form-item bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition flex flex-col justify-between">
 <div>
 <div class="flex items-start gap-3.5 mb-3">
 <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0">
@@ -222,7 +225,7 @@
 </div>
 <div>
 <h3 class="text-sm sm:text-base font-bold text-gray-900 leading-snug">
-                Constitution Template – Close Company
+                Constitution Template â€“ Close Company
               </h3>
 <p class="text-xs text-slate-600 mt-1">
                 For small enterprises with simplified corporate governance and up to 5 members
@@ -233,7 +236,7 @@
 <div class="pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
 <div class="flex items-center gap-2 text-[11px] text-slate-500">
 <span class="px-2 py-0.5 bg-slate-100 rounded text-slate-700 font-medium">PDF, 210 KB</span>
-<span>•</span>
+<span>â€¢</span>
 <span>Last updated: Jan 2025</span>
 </div>
 <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0266b3] text-white hover:bg-[#014f8c] text-xs font-medium transition shadow-sm" href="#">
@@ -243,7 +246,7 @@
 </div>
 </article>
 <!-- Card 4 -->
-<article class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition flex flex-col justify-between">
+<article class="form-item bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition flex flex-col justify-between">
 <div>
 <div class="flex items-start gap-3.5 mb-3">
 <div class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0">
@@ -251,7 +254,7 @@
 </div>
 <div>
 <h3 class="text-sm sm:text-base font-bold text-gray-900 leading-snug">
-                Constitution Template – Company Limited by Guarantee
+                Constitution Template â€“ Company Limited by Guarantee
               </h3>
 <p class="text-xs text-slate-600 mt-1">
                 For non-profits, associations, and clubs where members provide a financial guarantee
@@ -262,7 +265,7 @@
 <div class="pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
 <div class="flex items-center gap-2 text-[11px] text-slate-500">
 <span class="px-2 py-0.5 bg-slate-100 rounded text-slate-700 font-medium">PDF, 225 KB</span>
-<span>•</span>
+<span>â€¢</span>
 <span>Last updated: Jan 2025</span>
 </div>
 <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0266b3] text-white hover:bg-[#014f8c] text-xs font-medium transition shadow-sm" href="#">
@@ -274,7 +277,7 @@
 </div>
 </section>
 <!-- SECTION B: Beneficial Owner & Governance Forms -->
-<section class="space-y-4" data-purpose="beneficial-owner-forms">
+<section class="space-y-4 scroll-mt-6" data-purpose="beneficial-owner-forms" data-category="beneficial" id="beneficial-owner-forms">
 <div class="flex items-center justify-between pb-1 border-b border-slate-200">
 <div class="flex items-center gap-2.5">
 <h2 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Beneficial Owner &amp; Governance Forms</h2>
@@ -284,7 +287,7 @@
 </div>
 <div class="bg-white rounded-xl border border-slate-200 divide-y divide-slate-100 shadow-sm overflow-hidden">
 <!-- Item 1 -->
-<div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
+<div class="form-item p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
 <div class="flex items-start sm:items-center gap-3.5">
 <div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-xl">badge</span>
@@ -303,7 +306,7 @@
 </div>
 </div>
 <!-- Item 2 -->
-<div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
+<div class="form-item p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
 <div class="flex items-start sm:items-center gap-3.5">
 <div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-xl">admin_panel_settings</span>
@@ -322,7 +325,7 @@
 </div>
 </div>
 <!-- Item 3 -->
-<div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
+<div class="form-item p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
 <div class="flex items-start sm:items-center gap-3.5">
 <div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-xl">assignment_turned_in</span>
@@ -341,7 +344,7 @@
 </div>
 </div>
 <!-- Item 4 -->
-<div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
+<div class="form-item p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
 <div class="flex items-start sm:items-center gap-3.5">
 <div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-xl">person_add</span>
@@ -360,7 +363,7 @@
 </div>
 </div>
 <!-- Item 5 -->
-<div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
+<div class="form-item p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-slate-50/70 transition">
 <div class="flex items-start sm:items-center gap-3.5">
 <div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-xl">how_to_reg</span>
@@ -381,7 +384,7 @@
 </div>
 </section>
 <!-- SECTION C: Restoration Forms For Failure To Re-Register -->
-<section class="space-y-4" data-purpose="restoration-forms">
+<section class="space-y-4 scroll-mt-6" data-purpose="restoration-forms" data-category="restoration" id="restoration-forms">
 <div class="flex items-center justify-between pb-1 border-b border-slate-200">
 <div class="flex items-center gap-2.5">
 <h2 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Restoration Forms for Failure to Re-Register</h2>
@@ -391,7 +394,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 <!-- Card 1 -->
-<div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
+<div class="form-item bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
 <div>
 <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded mb-2">Business Names</span>
 <h3 class="text-xs sm:text-sm font-semibold text-gray-900 leading-snug">
@@ -399,14 +402,14 @@
           </h3>
 </div>
 <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-<span class="text-slate-500 text-[11px]">PDF • 175 KB</span>
+<span class="text-slate-500 text-[11px]">PDF â€¢ 175 KB</span>
 <a class="text-[#0266b3] hover:text-[#014f8c] font-semibold inline-flex items-center gap-1" href="#">
             Download <span class="material-symbols-outlined text-xs">arrow_forward</span>
 </a>
 </div>
 </div>
 <!-- Card 2 -->
-<div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
+<div class="form-item bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
 <div>
 <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded mb-2">Public &amp; Private</span>
 <h3 class="text-xs sm:text-sm font-semibold text-gray-900 leading-snug">
@@ -414,14 +417,14 @@
           </h3>
 </div>
 <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-<span class="text-slate-500 text-[11px]">PDF • 210 KB</span>
+<span class="text-slate-500 text-[11px]">PDF â€¢ 210 KB</span>
 <a class="text-[#0266b3] hover:text-[#014f8c] font-semibold inline-flex items-center gap-1" href="#">
             Download <span class="material-symbols-outlined text-xs">arrow_forward</span>
 </a>
 </div>
 </div>
 <!-- Card 3 -->
-<div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
+<div class="form-item bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
 <div>
 <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded mb-2">Close Companies</span>
 <h3 class="text-xs sm:text-sm font-semibold text-gray-900 leading-snug">
@@ -429,14 +432,14 @@
           </h3>
 </div>
 <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-<span class="text-slate-500 text-[11px]">PDF • 190 KB</span>
+<span class="text-slate-500 text-[11px]">PDF â€¢ 190 KB</span>
 <a class="text-[#0266b3] hover:text-[#014f8c] font-semibold inline-flex items-center gap-1" href="#">
             Download <span class="material-symbols-outlined text-xs">arrow_forward</span>
 </a>
 </div>
 </div>
 <!-- Card 4 -->
-<div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
+<div class="form-item bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
 <div>
 <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded mb-2">Guarantee Companies</span>
 <h3 class="text-xs sm:text-sm font-semibold text-gray-900 leading-snug">
@@ -444,14 +447,14 @@
           </h3>
 </div>
 <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-<span class="text-slate-500 text-[11px]">PDF • 185 KB</span>
+<span class="text-slate-500 text-[11px]">PDF â€¢ 185 KB</span>
 <a class="text-[#0266b3] hover:text-[#014f8c] font-semibold inline-flex items-center gap-1" href="#">
             Download <span class="material-symbols-outlined text-xs">arrow_forward</span>
 </a>
 </div>
 </div>
 <!-- Card 5 -->
-<div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
+<div class="form-item bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-amber-300 hover:shadow-md transition">
 <div>
 <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded mb-2">External Companies</span>
 <h3 class="text-xs sm:text-sm font-semibold text-gray-900 leading-snug">
@@ -459,7 +462,7 @@
           </h3>
 </div>
 <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-<span class="text-slate-500 text-[11px]">PDF • 205 KB</span>
+<span class="text-slate-500 text-[11px]">PDF â€¢ 205 KB</span>
 <a class="text-[#0266b3] hover:text-[#014f8c] font-semibold inline-flex items-center gap-1" href="#">
             Download <span class="material-symbols-outlined text-xs">arrow_forward</span>
 </a>
@@ -468,7 +471,7 @@
 </div>
 </section>
 <!-- SECTION D: Annual Return Forms -->
-<section class="space-y-4 pb-12" data-purpose="annual-return-forms">
+<section class="space-y-4 pb-12 scroll-mt-6" data-purpose="annual-return-forms" data-category="annual" id="annual-return-forms">
 <div class="flex items-center justify-between pb-1 border-b border-slate-200">
 <div class="flex items-center gap-2.5">
 <h2 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Annual Return Forms</h2>
@@ -478,7 +481,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 <!-- Item 1 -->
-<div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm flex items-center justify-between gap-4 hover:shadow-md transition">
+<div class="form-item bg-white rounded-xl p-5 border border-slate-200 shadow-sm flex items-center justify-between gap-4 hover:shadow-md transition">
 <div class="flex items-center gap-3.5">
 <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-2xl">event_repeat</span>
@@ -488,7 +491,7 @@
 <p class="text-xs text-slate-500 mt-0.5">Statutory yearly declaration of shareholding, directors, and status</p>
 <div class="flex items-center gap-2 text-[11px] text-slate-400 mt-2">
 <span>PDF, 310 KB</span>
-<span>•</span>
+<span>â€¢</span>
 <span>Updated: Jan 2025</span>
 </div>
 </div>
@@ -499,7 +502,7 @@
         </a>
 </div>
 <!-- Item 2 -->
-<div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm flex items-center justify-between gap-4 hover:shadow-md transition">
+<div class="form-item bg-white rounded-xl p-5 border border-slate-200 shadow-sm flex items-center justify-between gap-4 hover:shadow-md transition">
 <div class="flex items-center gap-3.5">
 <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-2xl">event_repeat</span>
@@ -509,7 +512,7 @@
 <p class="text-xs text-slate-500 mt-0.5">Streamlined annual filing for registered close corporations</p>
 <div class="flex items-center gap-2 text-[11px] text-slate-400 mt-2">
 <span>PDF, 260 KB</span>
-<span>•</span>
+<span>â€¢</span>
 <span>Updated: Jan 2025</span>
 </div>
 </div>
@@ -523,8 +526,43 @@
 </section>
 </main>
 <!-- END: MainContent -->
+<footer class="bg-white border-t border-slate-200 mt-8 py-8" data-purpose="site-footer">
+<div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div class="space-y-1">
+<p class="text-sm font-bold text-gray-900">CIPA · Companies and Intellectual Property Authority</p>
+<p class="text-xs text-slate-500 max-w-3xl leading-relaxed">Protecting Business Interests · Call 3673797/758/748/783 · WhatsApp 73263804</p>
+</div>
+<nav aria-label="Footer Navigation" class="flex items-center gap-6 text-xs font-semibold text-[#0266b3] flex-shrink-0">
+<a class="hover:underline underline-offset-2" href="home.html">Home</a>
+<a class="hover:underline underline-offset-2" href="forms.html">Forms</a>
+<a class="hover:underline underline-offset-2" href="#">Contact</a>
+</nav>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp (bottom-right) -->
+<a href="https://wa.me/26773263804?text=Hello%20CIPA%2C%20I%20need%20help%20choosing%20a%20company%20type%20and%20downloading%20the%20right%20form." target="_blank" rel="noopener" aria-label="Chat to CIPA on WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-xl transition hover:scale-105">
+<svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+</a>
+<button data-to-top class="hidden fixed bottom-24 right-7 z-40 w-11 h-11 rounded-full bg-[#0266b3] hover:bg-[#014f8c] text-white shadow-lg items-center justify-center transition" aria-label="Back to top" type="button">
+<svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+</button>
+<script>
+(function () {
+  var toTop = document.querySelector('[data-to-top]');
+  window.addEventListener('scroll', function () {
+    var y = window.scrollY || window.pageYOffset;
+    if (!toTop) return;
+    var show = y > 600;
+    toTop.classList.toggle('hidden', !show);
+    toTop.classList.toggle('flex', show);
+  }, { passive: true });
+  if (toTop) toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+})();
+</script>
 <!-- Download verification toast (simulated download) -->
-<div aria-live="polite" class="fixed bottom-6 right-6 z-[100] hidden" id="download-toast">
+<div aria-live="polite" class="fixed bottom-24 right-24 z-[100] hidden" id="download-toast">
 <div class="flex items-center gap-3 bg-slate-900 text-white pl-3 pr-5 py-3 rounded-xl shadow-2xl border border-white/10 min-w-[280px] max-w-sm">
 <div class="w-9 h-9 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0" id="download-toast-tick">
 <span class="material-symbols-outlined text-white text-xl font-bold">check</span>
@@ -537,6 +575,124 @@
 </div>
 <script>
 (function () {
+  'use strict';
+
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = document.getElementById('mobile-menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', function () {
+      var open = mobileMenu.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', String(!open));
+      menuBtn.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+    });
+  }
+
+  /* ---------- Search + category filtering ---------- */
+  var searchInput = document.getElementById('forms-search');
+  var clearBtn = document.getElementById('search-clear');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.filter-chip'));
+  var countEl = document.getElementById('results-count');
+  var noResults = document.getElementById('no-results');
+  var resetBtn = document.getElementById('reset-filters');
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[data-category]'));
+  var activeFilter = 'all';
+
+  // Every downloadable entry is tagged .form-item in the markup (4 constitution
+  // articles + 5 beneficial-owner rows + 5 restoration cards + 2 annual cards).
+  var items = Array.prototype.slice.call(document.querySelectorAll('.form-item'));
+  items.forEach(function (card) {
+    var sec = card.closest('main section[data-category]');
+    if (sec) card.setAttribute('data-cat', sec.getAttribute('data-category'));
+  });
+  var total = items.length;
+
+  var ACTIVE = ['bg-[#0266b3]', 'text-white'];
+  var IDLE = ['bg-slate-100', 'text-slate-600'];
+
+  function paintChips() {
+    chips.forEach(function (c) {
+      var on = c.getAttribute('data-filter') === activeFilter;
+      c.setAttribute('aria-pressed', String(on));
+      ACTIVE.forEach(function (cls) { c.classList.toggle(cls, on); });
+      IDLE.forEach(function (cls) { c.classList.toggle(cls, !on); });
+      c.classList.toggle('font-semibold', on);
+      c.classList.toggle('font-medium', !on);
+    });
+  }
+
+  function applyFilters() {
+    var q = (searchInput.value || '').trim().toLowerCase();
+    var shown = 0;
+    items.forEach(function (card) {
+      var matchesCat = activeFilter === 'all' || card.getAttribute('data-cat') === activeFilter;
+      var text = card.textContent.toLowerCase();
+      var matchesQ = !q || text.indexOf(q) !== -1;
+      var visible = matchesCat && matchesQ;
+      card.classList.toggle('hidden', !visible);
+      if (visible) shown++;
+    });
+    // Hide section headers with zero visible children.
+    sections.forEach(function (sec) {
+      var anyVisible = sec.querySelector('.form-item:not(.hidden)');
+      sec.classList.toggle('hidden', !anyVisible);
+    });
+    noResults.classList.toggle('hidden', shown !== 0);
+    countEl.textContent = q || activeFilter !== 'all'
+      ? ('Showing ' + shown + ' of ' + total + ' forms' + (q ? ' for "' + searchInput.value.trim() + '"' : ''))
+      : ('Showing ' + total + ' of ' + total + ' forms');
+    clearBtn.classList.toggle('hidden', !q);
+    clearBtn.classList.toggle('inline-flex', !!q);
+    try {
+      var url = new URL(window.location.href);
+      if (q) url.searchParams.set('q', searchInput.value.trim()); else url.searchParams.delete('q');
+      if (activeFilter !== 'all') url.searchParams.set('cat', activeFilter); else url.searchParams.delete('cat');
+      window.history.replaceState({}, '', url.toString());
+    } catch (e) { /* file:// or old browser: ignore */ }
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilters);
+    // Preseed from ?q= / ?cat= (e.g. arriving from the home page search box).
+    try {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('q')) searchInput.value = params.get('q');
+      var cat = params.get('cat');
+      if (cat && chips.some(function (c) { return c.getAttribute('data-filter') === cat; })) activeFilter = cat;
+    } catch (e) {}
+    paintChips();
+    applyFilters();
+  }
+
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      activeFilter = c.getAttribute('data-filter');
+      paintChips();
+      applyFilters();
+    });
+  });
+
+  if (clearBtn) clearBtn.addEventListener('click', function () {
+    searchInput.value = '';
+    searchInput.focus();
+    applyFilters();
+  });
+  if (resetBtn) resetBtn.addEventListener('click', function () {
+    searchInput.value = '';
+    activeFilter = 'all';
+    paintChips();
+    applyFilters();
+    searchInput.focus();
+  });
+  // "/" focuses search, Escape clears it.
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && document.activeElement !== searchInput) { e.preventDefault(); searchInput.focus(); }
+    if (e.key === 'Escape' && document.activeElement === searchInput && searchInput.value) {
+      searchInput.value = ''; applyFilters();
+    }
+  });
+
+  /* ---------- Download toast + real file download ---------- */
   var toast = document.getElementById('download-toast');
   var toastFile = document.getElementById('download-toast-file');
   var hideTimer = null;
@@ -544,7 +700,6 @@
   function showToast(fileName, btn) {
     toastFile.textContent = fileName ? ('Downloaded: ' + fileName) : 'Your download has started.';
     toast.classList.remove('hidden');
-    // re-trigger animation
     toast.style.opacity = '0';
     toast.style.transform = 'translateY(8px)';
     requestAnimationFrame(function () {
@@ -557,13 +712,12 @@
       toast.style.opacity = '0';
       toast.style.transform = 'translateY(8px)';
       setTimeout(function () { toast.classList.add('hidden'); }, 250);
-    }, 3000);
+    }, 3200);
 
-    // temporary tick state on the clicked button
     if (btn && !btn.dataset.busy) {
       btn.dataset.busy = '1';
       var original = btn.innerHTML;
-      btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span> Downloaded ✓';
+      btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span> Downloaded';
       btn.classList.add('!bg-emerald-600', '!text-white', '!border-emerald-600');
       setTimeout(function () {
         btn.innerHTML = original;
@@ -573,13 +727,31 @@
     }
   }
 
+  function slug(name) {
+    return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60) || 'cipa-form';
+  }
+
   function fileNameFor(link) {
-    var card = link.closest('article, div.bg-white');
-    if (card) {
-      var h = card.querySelector('h3');
-      if (h) return h.textContent.trim().replace(/\s+/g, ' ');
-    }
-    return 'CIPA form (PDF)';
+    var card = link.closest('.form-item');
+    var h = card ? card.querySelector('h3') : null;
+    return h ? h.textContent.trim().replace(/\s+/g, ' ') : 'CIPA form (PDF)';
+  }
+
+  function downloadPlaceholder(title) {
+    // Official PDFs are not bundled with this preview, so generate a named
+    // cover note the user can keep; swap this Blob for the real file URL later.
+    var body = 'Companies and Intellectual Property Authority (CIPA)\n' +
+      'Forms & Downloads — placeholder file\n\n' +
+      'Requested document: ' + title + '\n' +
+      'Note: replace this generated file with the official PDF before publication.\n' +
+      'Enquiries: Call Centre 3673797/758/748/783 · WhatsApp 73263804\n';
+    var blob = new Blob([body], { type: 'text/plain;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = slug(title) + '.txt';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 800);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -587,7 +759,9 @@
       if (/download/i.test(a.textContent)) {
         a.addEventListener('click', function (e) {
           e.preventDefault();
-          showToast(fileNameFor(a), a);
+          var title = fileNameFor(a);
+          downloadPlaceholder(title);
+          showToast(title, a);
         });
       }
     });

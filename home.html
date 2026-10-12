@@ -1,256 +1,298 @@
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Companies and Intellectual Property Authority (CIPA)</title>
-<!-- Tailwind CSS CDN with forms and container queries plugins -->
+<title>Companies and Intellectual Property Authority (CIPA) — Home</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- FontAwesome Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
-<!-- Google Fonts: Inter -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<script data-purpose="tailwind-config">
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-          colors: {
-            cipa: {
-              topbar: '#1f385c',
-              blue: '#005596',
-              lightBlue: '#0072bc',
-              accentRed: '#e41f26',
-              grayBg: '#f4f5f7',
-              grayBanner: '#bcc3c9',
-              dropdownBg: '#eeeeee',
-            }
-          }
-        }
-      }
-    };
-  </script>
-<!-- Custom CSS for specific patterns & styling -->
-<style data-purpose="layout-patterns">
-    /* Geometric chevron tessellation pattern replicating Botswana basket / diamond national branding */
-    .cipa-pattern-banner {
-      background-color: #0264b3;
-      background-image: 
-        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.12) 0%, transparent 60%),
-        repeating-linear-gradient(45deg, rgba(0, 77, 140, 0.45) 0px, rgba(0, 77, 140, 0.45) 24px, transparent 24px, transparent 48px),
-        repeating-linear-gradient(-45deg, rgba(0, 114, 188, 0.35) 0px, rgba(0, 114, 188, 0.35) 24px, transparent 24px, transparent 48px);
-      background-size: cover;
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style data-purpose="banner-pattern">
+    .faceted-blue-banner {
+      background-color: #0077b6;
+      background-image:
+        linear-gradient(135deg, #005b8e 25%, transparent 25%),
+        linear-gradient(225deg, #005b8e 25%, transparent 25%),
+        linear-gradient(315deg, #005b8e 25%, transparent 25%),
+        linear-gradient(45deg, #005b8e 25%, transparent 25%);
+      background-position: 36px 0, 36px 0, 0 0, 0 0;
+      background-size: 72px 72px;
+      background-repeat: repeat;
     }
-    
-    /* Dropped shadow for quick access cards and cards */
-    .service-nav-shadow {
-      box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.12);
+    .step-connector {
+      position: absolute;
+      left: 17px;
+      top: 36px;
+      bottom: -16px;
+      width: 2px;
+      background-color: #e2e8f0;
     }
-  </style>
+    .step-item:last-child .step-connector { display: none; }
+</style>
 </head>
-<body class="bg-gray-100 text-slate-700 font-sans antialiased min-w-[1280px]">
-<!-- BEGIN: TopNotificationBar -->
-<section class="bg-[#1f385c] text-white text-center py-2 px-4 text-[13px] font-normal tracking-wide" data-purpose="top-announcement">
-<div class="max-w-7xl mx-auto leading-tight">
-      The companies have been granted six months extension to file the constitution in addition to the 12 months initially given. The extension has been granted from 16 March 2026 to 30 September 2026.
-      <a class="ml-2 font-semibold underline underline-offset-2 hover:text-sky-200 transition-colors whitespace-nowrap" href="forms.html">Download here</a>
-    </div>
-</section>
-<!-- END: TopNotificationBar -->
-<!-- BEGIN: MainHeader -->
-<header class="bg-white border-b border-gray-100 relative z-30">
-<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-<!-- CIPA Official Logo -->
-<a class="flex items-center gap-3.5 group select-none" href="home.html">
-<div class="relative">
-<span class="text-[52px] font-black tracking-tighter text-[#005596] leading-none block italic font-sans scale-y-110">CIPA</span>
-<div class="h-[2px] bg-[#e41f26] w-full mt-0.5"></div>
-<span class="text-[7.5px] uppercase font-bold tracking-widest text-[#005596] block pt-0.5">PROTECTING BUSINESS INTERESTS</span>
+<body class="bg-slate-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+<!-- Top announcement -->
+<aside class="bg-[#1f4870] text-white py-2 px-4 text-center text-[12.5px] leading-snug" data-purpose="announcement-banner">
+    The companies have been granted six months extension to file the constitution in addition to the 12 months initially given. The extension has been granted from 16 March 2026 to 30 September 2026.
+    <a class="ml-2 font-semibold underline underline-offset-2 hover:text-sky-200 transition-colors whitespace-nowrap" href="forms.html">Click here to download</a>
+</aside>
+<!-- Header (matches forms.html) -->
+<header data-site-header class="bg-white border-b border-gray-100 shadow-sm sticky top-0 z-30">
+<div class="max-w-[1400px] mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
+<a aria-label="CIPA Home" class="flex items-center gap-2 group py-2" href="home.html">
+<div class="flex items-baseline font-black tracking-tighter text-[#0266b3] text-4xl">
+<span>C</span><span class="relative">I<span class="absolute -top-1 left-1/2 -translate-x-1/2 w-4 h-[3px] bg-[#d93829] rounded-full"></span></span><span>P</span><span>A</span>
 </div>
-<div class="border-l border-gray-300 pl-3 leading-[1.15] text-[#005596] font-semibold text-[13px]">
-<div class="tracking-tight uppercase">COMPANIES</div>
-<div class="tracking-tight uppercase text-[11px] font-normal text-slate-600">AND INTELLECTUAL</div>
-<div class="tracking-tight uppercase">PROPERTY AUTHORITY</div>
+<div class="border-l border-gray-300 pl-2.5 flex flex-col justify-center">
+<span class="text-[9.5px] font-bold text-[#0266b3] uppercase leading-tight tracking-wider">Companies</span>
+<span class="text-[9.5px] font-bold text-[#0266b3] uppercase leading-tight tracking-wider">and Intellectual</span>
+<span class="text-[9.5px] font-bold text-[#0266b3] uppercase leading-tight tracking-wider">Property Authority</span>
+<span class="text-[6.5px] font-medium text-gray-500 uppercase tracking-widest mt-0.5">Protecting Business Interests</span>
 </div>
 </a>
-<!-- Right Navigation & Quick Links -->
-<div class="flex flex-col items-end">
-<!-- Main Menu Bar -->
-<nav class="flex items-center space-x-6 text-[12.5px] font-extrabold text-[#1a2836] tracking-wide relative">
-<a class="hover:text-[#005596] flex items-center gap-1 transition-colors" href="#">
-            START A BUSINESS <i class="fa-solid fa-caret-down text-[10px] text-gray-500"></i>
-</a>
-<a class="hover:text-[#005596] flex items-center gap-1 transition-colors" href="#">
-            IP PROTECTION <i class="fa-solid fa-caret-down text-[10px] text-gray-500"></i>
-</a>
-<a class="hover:text-[#005596] flex items-center gap-1 transition-colors" href="#">
-            COMPLIANCE <i class="fa-solid fa-caret-down text-[10px] text-gray-500"></i>
-</a>
-<a class="hover:text-[#005596] flex items-center gap-1 transition-colors" href="#">
-            AML/CFT <i class="fa-solid fa-caret-down text-[10px] text-gray-500"></i>
-</a>
-<!-- QUICK LINKS active dropdown -->
-<div class="relative group">
-<button class="text-[#005596] flex items-center gap-1 cursor-pointer font-extrabold focus:outline-none">
-              QUICK LINKS <i class="fa-solid fa-caret-down text-[10px] text-[#005596]"></i>
-</button>
-<!-- Open Dropdown Menu as displayed in reference image -->
-<div class="absolute left-0 mt-3 w-56 bg-[#f2f2f2] text-slate-700 shadow-md border-t border-gray-200 text-xs py-1.5 z-50" data-purpose="quick-links-dropdown">
-<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="forms.html">Forms &amp; Downloads</a>
-<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="#">Frequently Asked Questions</a>
-<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="#">CIPA Policies</a>
-<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="#">CIPA Acts</a>
-<a class="block px-4 py-2 hover:bg-gray-200 text-slate-700 font-normal transition-colors" href="#">CIPA Publications</a>
-</div>
-</div>
-<a class="hover:text-[#005596] transition-colors" href="#">ABOUT US</a>
+<nav class="hidden md:flex items-center space-x-7 text-[12.5px] font-bold tracking-wide text-gray-800" data-purpose="primary-navigation">
+<a class="hover:text-[#0266b3] transition-colors" href="business-name.html">START A BUSINESS</a>
+<a class="hover:text-[#0266b3] transition-colors" href="trademark.html">IP PROTECTION</a>
+<a class="hover:text-[#0266b3] transition-colors" href="home.html#how-to-comply">COMPLIANCE</a>
+<a class="text-[#0266b3]" href="forms.html">FORMS &amp; DOWNLOADS</a>
+<a class="hover:text-[#0266b3] transition-colors" href="home.html#obrs">ABOUT US</a>
 </nav>
-<!-- Sub Links (OBRS) -->
-<div class="mt-3.5 text-[11px] text-gray-600 font-medium tracking-tight">
-<a class="hover:underline text-gray-800" href="#">Login to OBRS</a>
-<span class="mx-1.5 text-gray-400">|</span>
-<a class="hover:underline text-gray-800" href="#">Create Profile</a>
-<span class="mx-1.5 text-gray-400">|</span>
-<a class="hover:underline text-gray-800" href="#">Search the Register</a>
+<button data-menu-btn class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50" aria-expanded="false" aria-label="Open menu" type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
-</div>
+<div data-menu class="hidden md:hidden border-t border-slate-100 bg-white px-6 py-4 space-y-1 text-sm font-semibold text-slate-800">
+<a class="block py-2 text-[#0266b3]" href="home.html">Home</a>
+<a class="block py-2 hover:text-[#0266b3]" href="business-name.html">Start a Business</a>
+<a class="block py-2 hover:text-[#0266b3]" href="trademark.html">IP Protection</a>
+<a class="block py-2 hover:text-[#0266b3]" href="home.html#how-to-comply">Compliance</a>
+<a class="block py-2 hover:text-[#0266b3]" href="forms.html">Forms &amp; Downloads</a>
 </div>
 </header>
-<!-- END: MainHeader -->
-<!-- BEGIN: HeroChevronBanner -->
-<section class="cipa-pattern-banner w-full h-[180px] relative overflow-hidden" data-purpose="decorative-banner">
-<!-- Diamond/zigzag overlay effect -->
-<div class="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-blue-600/10 to-blue-900/50 pointer-events-none"></div>
+<div class="w-full h-16 faceted-blue-banner border-t border-sky-400/20" data-purpose="decorative-banner"></div>
+
+<!-- Search (forms style) -->
+<section class="bg-white border-b border-slate-200/80 py-6" data-purpose="global-search-container">
+<div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+<div class="max-w-3xl">
+<form data-global-search action="search.html" class="relative" method="GET">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-2xl pointer-events-none">search</span>
+<input class="w-full pl-12 pr-28 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-sm md:text-base text-gray-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0266b3]/30 focus:border-[#0266b3] transition-all" name="q" placeholder="Search services, forms, requirements..." type="search" aria-label="Search services, forms and requirements" autocomplete="off"/>
+<button class="absolute right-1.5 top-1/2 -translate-y-1/2 px-6 py-2 bg-[#0266b3] hover:bg-[#014f8c] text-white text-sm font-medium rounded-lg transition-colors" type="submit">Search</button>
+</div>
+</form>
+</div>
+</div>
 </section>
-<!-- END: HeroChevronBanner -->
-<!-- BEGIN: QuickAccessNavigation -->
-<div class="max-w-5xl mx-auto px-4 -mt-10 relative z-20">
-<div class="bg-white rounded border border-gray-200 service-nav-shadow grid grid-cols-5 divide-x divide-gray-200 py-3">
-<!-- Procurement -->
-<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
-<i class="fa-solid fa-gear text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
-<span class="text-[11.5px] font-bold text-slate-800">Procurement</span>
-</a>
-<!-- Employment -->
-<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
-<i class="fa-regular fa-newspaper text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
-<span class="text-[11.5px] font-bold text-slate-800">Employment</span>
-</a>
-<!-- Media & Publications -->
-<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
-<i class="fa-solid fa-video text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
-<span class="text-[11.5px] font-bold text-slate-800">Media &amp; Publications</span>
-</a>
-<!-- IP Journal -->
-<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
-<i class="fa-regular fa-file-lines text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
-<span class="text-[11.5px] font-bold text-slate-800">IP Journal</span>
-</a>
-<!-- Information Center -->
-<a class="flex flex-col items-center justify-center p-2 text-center group hover:bg-slate-50 transition-colors" href="#">
-<i class="fa-solid fa-circle-info text-2xl text-slate-700 group-hover:text-blue-700 transition-colors mb-2"></i>
-<span class="text-[11.5px] font-bold text-slate-800">Information Center</span>
-</a>
+
+<main class="flex-grow max-w-[1400px] w-full mx-auto px-6 lg:px-12 py-8 space-y-10">
+<nav class="flex items-center gap-2 text-xs text-slate-500" aria-label="Breadcrumb">
+<a class="inline-flex items-center gap-1 font-semibold text-[#0266b3] hover:underline" href="home.html">Home</a>
+<span class="text-slate-300">/</span>
+<span class="text-slate-500">Service Hub</span>
+</nav>
+
+<header data-purpose="page-title-header">
+<span class="text-xs font-bold tracking-wider text-[#0266b3] uppercase mb-2 block">CIPA Service Hub</span>
+<h1 class="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight leading-tight mb-3">Submission of Compulsory Constitutions and Beneficial Ownership Information</h1>
+<p class="text-sm sm:text-base text-slate-600 max-w-4xl leading-relaxed">All companies must file a constitution and declare beneficial owners. Find templates, follow the steps, and file before 30 September 2026.</p>
+</header>
+
+<div class="bg-amber-50 border border-amber-200 rounded-xl p-5" data-purpose="compliance-warning-notice">
+<div class="flex items-start gap-3.5">
+<div aria-hidden="true" class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">warning</span>
+</div>
+<div class="text-sm">
+<h2 class="font-bold text-gray-900 text-base mb-1">Important: six months extension to file the constitution</h2>
+<p class="text-slate-700 leading-relaxed mb-3">The companies have been granted six months extension in addition to the 12 months initially given — from 16 March 2026 to 30 September 2026. The submission fee for constitutions is P500 for all company types.</p>
+<div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+<a class="text-amber-800 hover:text-amber-900 inline-flex items-center gap-1" href="forms.html">Download constitution templates <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+<a class="text-amber-800 hover:text-amber-900 inline-flex items-center gap-1" href="#how-to-comply">How to comply <span class="material-symbols-outlined text-sm">arrow_downward</span></a>
 </div>
 </div>
-<!-- END: QuickAccessNavigation -->
-<!-- BEGIN: MainContentSection -->
-<main class="max-w-6xl mx-auto px-4 my-10">
-<div class="bg-white border border-gray-200 rounded shadow-sm overflow-hidden flex flex-col md:flex-row relative">
-<!-- Left Side: Professional Businesswoman with Laptop -->
-<div class="md:w-5/12 relative overflow-hidden bg-slate-900 min-h-[580px] flex items-end">
-<img alt="Professional African businesswoman working on constitution filing online" class="absolute inset-0 w-full h-full object-cover object-left-top contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoR6zTRQtUAQJMuxiSKG9knrFc0It1r7XIjvtID48gMCnHFwZlADWTBO978yVUnUqnhr3dzWNQtzT6wBaTOhQGKKQrrBT8c4eqBKq9DEIOhaEQLoFlOL6geTOoK8FHb8UwA1OR4xPy4fU0VsVArIc5NNmAmOk4g6MTscF33c-7sv6MJgLXCO5ZRT93V-PiSvSEDbIRFsoZ7Jt1RjMK5qle9GvMvkk2mnslawwRDwzafymzPTbvPNw"/>
-<!-- Tech/Hologram glowing overlay effect matching reference -->
-<div class="absolute inset-0 bg-gradient-to-t from-[#024479]/90 via-transparent to-red-600/20 mix-blend-screen pointer-events-none"></div>
-<div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-white/95 pointer-events-none"></div>
-<!-- Watermark / overlay text from background -->
-<div class="relative z-10 p-5 text-white/50 text-[10px] uppercase font-mono">
-          OBRS Portal System Active
-        </div>
 </div>
-<!-- Right Side: Regulatory & Constitution Information -->
-<div class="md:w-7/12 p-8 lg:p-10 text-slate-800 flex flex-col justify-between relative bg-white">
-<!-- Header -->
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<div class="lg:col-span-8 space-y-6">
+<section class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm" id="overview">
+<div class="border-b border-slate-200 pb-3 mb-5">
+<h2 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Constitutions and beneficial ownership</h2>
+<p class="text-xs text-slate-500 mt-1">What every new and existing company must file.</p>
+</div>
+<div class="space-y-5">
 <div>
-<h1 class="text-[17px] lg:text-[19px] font-extrabold text-[#005596] leading-snug tracking-tight mb-3 uppercase">
-            SUBMISSION OF COMPULSORY CONSTITUTIONS AND BENEFICIAL OWNERSHIP INFORMATION
-          </h1>
-<!-- Intro Paragraph -->
-<div class="relative mb-5">
-<!-- Floating Decorative Computer Monitor Icon Badge -->
-<div class="float-left mr-3 mb-1 w-14 h-14 rounded-full border-2 border-orange-400/80 bg-orange-50/60 flex items-center justify-center text-slate-700 shadow-sm">
-<i class="fa-solid fa-desktop text-2xl text-slate-800"></i>
+<h3 class="text-sm font-bold text-gray-900 mb-1">Compulsory constitutions</h3>
+<p class="text-sm text-slate-600 leading-relaxed">All companies are now required to have a constitution. This applies to all new registrations as well as all existing companies. A template to guide customers to develop their constitutions has been provided on the Information Centre section of the CIPA website <a class="text-[#0266b3] font-semibold hover:underline" href="https://www.cipa.co.bw" target="_blank" rel="noopener">www.cipa.co.bw</a>. The submission fee for constitutions is P500 for all company types.</p>
 </div>
-<p class="text-[12px] leading-relaxed text-slate-700 text-justify">
-              All companies are now required to have a constitution. This applies to all new registrations as well as all existing companies. A template to guide customers to develop their constitutions has been provided on the Information Centre section of the CIPA website <a class="text-blue-600 hover:underline" href="https://www.cipa.co.bw" target="_blank">www.cipa.co.bw</a>. The submission fee for constitutions is P500 for all company types.
-            </p>
+<div>
+<h3 class="text-sm font-bold text-gray-900 mb-1">Beneficial ownership</h3>
+<p class="text-sm text-slate-600 leading-relaxed">All new and existing companies must declare persons having control or ownership over the company. A beneficial owner must be a natural person. Where a company or other legal entity such as a trust or association is identified as having a link to BO information, a natural person having some form of ultimate control, either directly or indirectly, over the identified legal entity has to be identified. In addition to providing the personal details of beneficial owners, the nature of their interest in the company must be declared. Please refer to the FIA Act for a detailed description of beneficial ownership.</p>
 </div>
-<div class="clear-both"></div>
-<!-- Section: Beneficial Ownership -->
-<div class="relative mb-4">
-<h2 class="text-[13px] font-bold text-slate-900 mb-1">Beneficial Ownership</h2>
-<!-- Floating Bar Chart Badge -->
-<div class="float-left mr-3 mb-1 w-12 h-12 rounded-full border-2 border-blue-400/80 bg-blue-50/60 flex items-center justify-center text-slate-700 shadow-sm">
-<i class="fa-solid fa-chart-column text-xl text-slate-800"></i>
-</div>
-<p class="text-[12px] leading-relaxed text-slate-700 text-justify">
-              All new and existing companies must declare persons having control or ownership over the company. A beneficial owner must be a natural person. Where a company or other legal entity such as a trust or association is identified as having a link to <a class="text-blue-600 hover:underline" href="#">BO information</a>, a natural person having some form of ultimate control, either directly or indirectly, over the identified legal entity has to be identified. In addition to providing the personal details of beneficial owners, the nature of their interest in the company must be declared. Please refer to the FIA Act for a detailed description of beneficial ownership.
-            </p>
-</div>
-<div class="clear-both"></div>
-<!-- Mechanisms Info Block -->
-<div class="mt-4 pt-2">
-<div class="flex items-center gap-3 mb-2">
-<div class="w-10 h-10 rounded-full border border-gray-300 bg-gray-50 flex items-center justify-center shrink-0">
-<i class="fa-solid fa-tablet-screen-button text-gray-500 text-lg"></i>
-</div>
-<p class="text-[12.5px] font-bold text-blue-700">
-                Mechanisms that identify and describe the following can be found at:
-              </p>
-</div>
-<div class="pl-12">
-<a class="text-[12px] font-semibold text-blue-700 hover:underline block mb-3" href="https://www.cipa.co.bw/what-is-aml-cft" target="_blank">
-                https://www.cipa.co.bw/what-is-aml-cft
-              </a>
-<ol class="list-decimal pl-5 text-[12px] space-y-1.5 text-slate-700">
+<div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+<p class="text-xs font-bold text-[#0266b3] mb-1">Mechanisms that identify and describe the following can be found at:</p>
+<a class="text-xs font-semibold text-[#0266b3] hover:underline break-all" href="https://www.cipa.co.bw/what-is-aml-cft" target="_blank" rel="noopener">https://www.cipa.co.bw/what-is-aml-cft</a>
+<ol class="list-decimal pl-5 text-xs space-y-1.5 text-slate-700 mt-2">
 <li>Different types, forms and basic features of legal persons in Botswana.</li>
 <li>Processes for the creation of legal persons in Botswana.</li>
 <li>Processes for obtaining and recording of basic and beneficial ownership information related to legal persons</li>
 </ol>
 </div>
 </div>
+</section>
+
+<section class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm" id="how-to-comply">
+<div class="border-b border-slate-200 pb-3 mb-5">
+<h2 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">How to comply before the deadline</h2>
+<p class="text-xs text-slate-500 mt-1">Work through these steps before 30 September 2026.</p>
 </div>
-<!-- Footer / Contact block inside hero card -->
-<div class="mt-8 pt-4 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#005596] text-white text-[13px] font-semibold hover:bg-[#014f8c] transition-colors shadow-sm" href="forms.html">
-<i class="fa-solid fa-download text-xs"></i>
-        Go to Forms &amp; Downloads
-      </a>
-<div class="flex flex-col items-end text-[12px] text-slate-800 font-semibold space-y-1">
-<div>Call Centre: 3673797/758/748/783</div>
-<div>WhatsApp: 73263804</div>
+<ol aria-label="Compliance steps" class="space-y-7 relative">
+<li class="relative flex items-start gap-4 step-item">
+<div aria-hidden="true" class="step-connector"></div>
+<div class="flex-shrink-0 w-9 h-9 rounded-full bg-blue-50 text-[#0266b3] border border-blue-100 font-bold flex items-center justify-center text-sm z-10">1</div>
+<div class="flex-grow pt-1">
+<h3 class="text-sm font-bold text-gray-900">Check the extension and fee</h3>
+<p class="text-sm text-slate-600 mt-1 leading-relaxed">Confirm your company type, the 16 March – 30 September 2026 window, and the P500 submission fee.</p>
+</div>
+</li>
+<li class="relative flex items-start gap-4 step-item">
+<div aria-hidden="true" class="step-connector"></div>
+<div class="flex-shrink-0 w-9 h-9 rounded-full bg-blue-50 text-[#0266b3] border border-blue-100 font-bold flex items-center justify-center text-sm z-10">2</div>
+<div class="flex-grow pt-1">
+<h3 class="text-sm font-bold text-gray-900">Download your constitution template</h3>
+<p class="text-sm text-slate-600 mt-1 leading-relaxed">Get the template from the Information Centre or Forms &amp; Downloads page and complete it accurately before signing.</p>
+</div>
+</li>
+<li class="relative flex items-start gap-4 step-item">
+<div aria-hidden="true" class="step-connector"></div>
+<div class="flex-shrink-0 w-9 h-9 rounded-full bg-blue-50 text-[#0266b3] border border-blue-100 font-bold flex items-center justify-center text-sm z-10">3</div>
+<div class="flex-grow pt-1">
+<h3 class="text-sm font-bold text-gray-900">Declare your beneficial owners</h3>
+<p class="text-sm text-slate-600 mt-1 leading-relaxed">Identify each natural person with ultimate control and declare the nature of their interest, per the FIA Act.</p>
+</div>
+</li>
+<li class="relative flex items-start gap-4 step-item">
+<div aria-hidden="true" class="step-connector"></div>
+<div class="flex-shrink-0 w-9 h-9 rounded-full bg-blue-50 text-[#0266b3] border border-blue-100 font-bold flex items-center justify-center text-sm z-10">4</div>
+<div class="flex-grow pt-1">
+<h3 class="text-sm font-bold text-gray-900">Submit via OBRS</h3>
+<p class="text-sm text-slate-600 mt-1 leading-relaxed">File through the Online Business Registration System and keep your submission reference and copies.</p>
+</div>
+</li>
+</ol>
+</section>
+
+<section class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm" id="quick-access">
+<div class="border-b border-slate-200 pb-3 mb-5">
+<h2 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Quick access services</h2>
+<p class="text-xs text-slate-500 mt-1">Explore support services and publications.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<a class="flex items-start gap-3 p-4 border border-slate-200 rounded-xl hover:border-[#0266b3] hover:bg-slate-50 transition-colors" href="#"><span class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined">settings</span></span><span><span class="block text-sm font-bold text-gray-900">Procurement</span><span class="block text-xs text-slate-500 mt-0.5">Tenders and supplier notices</span></span></a>
+<a class="flex items-start gap-3 p-4 border border-slate-200 rounded-xl hover:border-[#0266b3] hover:bg-slate-50 transition-colors" href="#"><span class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined">work</span></span><span><span class="block text-sm font-bold text-gray-900">Employment</span><span class="block text-xs text-slate-500 mt-0.5">Vacancies and careers</span></span></a>
+<a class="flex items-start gap-3 p-4 border border-slate-200 rounded-xl hover:border-[#0266b3] hover:bg-slate-50 transition-colors" href="#"><span class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined">movie</span></span><span><span class="block text-sm font-bold text-gray-900">Media &amp; Publications</span><span class="block text-xs text-slate-500 mt-0.5">News and releases</span></span></a>
+<a class="flex items-start gap-3 p-4 border border-slate-200 rounded-xl hover:border-[#0266b3] hover:bg-slate-50 transition-colors" href="#"><span class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined">description</span></span><span><span class="block text-sm font-bold text-gray-900">IP Journal</span><span class="block text-xs text-slate-500 mt-0.5">Trademark and IP notices</span></span></a>
+<a class="flex items-start gap-3 p-4 border border-slate-200 rounded-xl hover:border-[#0266b3] hover:bg-slate-50 transition-colors" href="#"><span class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined">info</span></span><span><span class="block text-sm font-bold text-gray-900">Information Center</span><span class="block text-xs text-slate-500 mt-0.5">Templates and guides</span></span></a>
+<a class="flex items-start gap-3 p-4 border border-[#0266b3] bg-blue-50/60 rounded-xl hover:bg-blue-100/60 transition-colors" href="forms.html"><span class="w-10 h-10 rounded-lg bg-[#0266b3] flex items-center justify-center text-white flex-shrink-0"><span class="material-symbols-outlined">download</span></span><span><span class="block text-sm font-bold text-gray-900">Forms &amp; Downloads →</span><span class="block text-xs text-slate-500 mt-0.5">Constitution templates and BO forms</span></span></a>
+<a class="flex items-start gap-3 p-4 border border-slate-200 rounded-xl hover:border-[#0266b3] hover:bg-slate-50 transition-colors" href="business-name.html"><span class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined">sell</span></span><span><span class="block text-sm font-bold text-gray-900">Business Names</span><span class="block text-xs text-slate-500 mt-0.5">Register a name and see the fee</span></span></a>
+<a class="flex items-start gap-3 p-4 border border-slate-200 rounded-xl hover:border-[#0266b3] hover:bg-slate-50 transition-colors" href="trademark.html"><span class="w-10 h-10 rounded-lg bg-blue-50 text-[#0266b3] flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined">verified_user</span></span><span><span class="block text-sm font-bold text-gray-900">Trademarks &amp; Logos</span><span class="block text-xs text-slate-500 mt-0.5">Protect a business logo</span></span></a>
+</div>
+</section>
+
+<section class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm" id="fees">
+<div class="border-b border-slate-200 pb-3 mb-5">
+<h2 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Key fees at a glance</h2>
+<p class="text-xs text-slate-500 mt-1">What each filing costs, next to the service it belongs to.</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead>
+<tr class="text-left text-xs uppercase tracking-wider text-slate-500 border-b border-slate-200">
+<th class="py-2 pr-4 font-bold">Service</th><th class="py-2 pr-4 font-bold">Fee</th><th class="py-2 font-bold">Where to file</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100">
+<tr><td class="py-3 pr-4 font-semibold text-gray-900">Constitution submission (all company types)</td><td class="py-3 pr-4 font-bold text-gray-900">P500</td><td class="py-3 text-slate-600">Via OBRS before 30 September 2026 · <a class="text-[#0266b3] font-semibold hover:underline" href="forms.html">templates</a></td></tr>
+<tr><td class="py-3 pr-4 font-semibold text-gray-900">Beneficial ownership declaration</td><td class="py-3 pr-4 font-bold text-gray-900">Free</td><td class="py-3 text-slate-600">Filed with your constitution · <a class="text-[#0266b3] font-semibold hover:underline" href="forms.html?cat=beneficial#beneficial-owner-forms">BO forms</a></td></tr>
+<tr><td class="py-3 pr-4 font-semibold text-gray-900">Annual return (close company / public or private)</td><td class="py-3 pr-4 font-bold text-gray-900">P150 / P300</td><td class="py-3 text-slate-600">Yearly filing · <a class="text-[#0266b3] font-semibold hover:underline" href="forms.html?cat=annual#annual-return-forms">annual return forms</a></td></tr>
+<tr><td class="py-3 pr-4 font-semibold text-gray-900">Business name registration</td><td class="py-3 pr-4"><a class="text-[#0266b3] font-semibold hover:underline" href="business-name.html#fees">See business name fee →</a></td><td class="py-3 text-slate-600">Via OBRS · <a class="text-[#0266b3] font-semibold hover:underline" href="business-name.html">guide</a></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm" id="obrs">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h2 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Ready to enjoy company registration from a click of button!!</h2>
+<p class="text-sm text-slate-600 mt-1">File online through the Online Business Registration System (OBRS).</p>
+<div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs">
+<a class="text-[#0266b3] font-semibold hover:underline" href="#">Login to OBRS</a>
+<a class="text-[#0266b3] font-semibold hover:underline" href="#">Create Profile</a>
+<a class="text-[#0266b3] font-semibold hover:underline" href="#">Search the Register</a>
 </div>
 </div>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#0266b3] hover:bg-[#014f8c] text-white text-sm font-semibold rounded-lg transition shadow-sm flex-shrink-0" href="#">Online Business Registration System (OBRS)</a>
 </div>
+</section>
+</div>
+
+<aside class="lg:col-span-4 space-y-6" data-purpose="sidebar-panels">
+<div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+<h2 class="text-sm font-bold text-gray-900 mb-3">On this page</h2>
+<nav class="space-y-2 text-xs" id="on-this-page" aria-label="On this page">
+<a class="onpage-link flex items-center text-[#0266b3] font-semibold pl-2.5 border-l-2 border-[#0266b3] py-0.5" href="#overview" data-target="overview">Constitutions and beneficial ownership</a>
+<a class="onpage-link flex items-center text-slate-600 hover:text-gray-900 pl-2.5 border-l-2 border-transparent py-0.5" href="#how-to-comply" data-target="how-to-comply">How to comply</a>
+<a class="onpage-link flex items-center text-slate-600 hover:text-gray-900 pl-2.5 border-l-2 border-transparent py-0.5" href="#quick-access" data-target="quick-access">Quick access services</a>
+<a class="onpage-link flex items-center text-slate-600 hover:text-gray-900 pl-2.5 border-l-2 border-transparent py-0.5" href="#fees" data-target="fees">Key fees</a>
+<a class="onpage-link flex items-center text-slate-600 hover:text-gray-900 pl-2.5 border-l-2 border-transparent py-0.5" href="#obrs" data-target="obrs">File via OBRS</a>
+<a class="onpage-link flex items-center text-slate-600 hover:text-gray-900 pl-2.5 border-l-2 border-transparent py-0.5" href="#need-help-card" data-target="need-help-card">Get help from CIPA</a>
+</nav>
+</div>
+<div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm text-sm" id="need-help-card">
+<h2 class="text-base font-bold text-gray-900 mb-1">Need help?</h2>
+<p class="text-xs text-slate-600 mb-4 leading-relaxed">Ask about constitutions, beneficial ownership or the filing process. Tap the WhatsApp button at the bottom-right to chat to us.</p>
+<hr class="border-slate-100 my-4"/>
+<div class="space-y-1.5 text-xs">
+<div class="flex items-center gap-1.5 font-bold text-gray-800">
+<span class="material-symbols-outlined text-base text-slate-500">call</span>
+<span>Call Center</span>
+</div>
+<p class="font-bold text-gray-900 pl-6">3673797 / 758 / 748 / 783</p>
+<p class="text-slate-600 pl-6">Monday to Friday, business hours (CAT)</p>
+</div>
+<p class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-400 leading-normal">Do not share passwords or sensitive personal documents in a chat.</p>
+</div>
+<div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+<h2 class="text-xs font-bold text-gray-900 mb-2">Before you submit</h2>
+<p class="text-xs text-slate-600 leading-relaxed">Downloading a template does not register your company. Complete the official filing process via OBRS, pay the P500 fee where applicable, and keep your submission reference.</p>
+</div>
+</aside>
 </div>
 </main>
-<!-- END: MainContentSection -->
-<!-- BEGIN: BottomCalloutBanner -->
-<footer class="mt-12 mb-16 text-center">
-<div class="bg-[#bcc3c9] text-white py-3 px-6 max-w-5xl mx-auto rounded-sm shadow-inner">
-<h2 class="text-xl md:text-2xl font-bold tracking-tight text-white drop-shadow-sm">
-        Ready to enjoy company registration from a click of button!!
-      </h2>
+
+<footer class="bg-white border-t border-slate-200 mt-8 py-8" data-purpose="site-footer">
+<div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div class="space-y-1">
+<p class="text-sm font-bold text-gray-900">CIPA · Companies and Intellectual Property Authority</p>
+<p class="text-xs text-slate-500 max-w-3xl leading-relaxed">Protecting Business Interests · Call 3673797/758/748/783 · WhatsApp 73263804</p>
 </div>
-<div class="mt-4">
-<a class="text-sm font-semibold text-blue-700 hover:underline tracking-wide" href="#">
-        Online Business Registration System (OBRS)
-      </a>
+<nav aria-label="Footer Navigation" class="flex items-center gap-6 text-xs font-semibold text-[#0266b3] flex-shrink-0">
+<a class="hover:underline underline-offset-2" href="#">Accessibility</a>
+<a class="hover:underline underline-offset-2" href="#">Privacy</a>
+<a class="hover:underline underline-offset-2" href="#">Contact</a>
+</nav>
+</div>
 </div>
 </footer>
-<!-- END: BottomCalloutBanner -->
+
+<!-- Floating WhatsApp (bottom-right) -->
+<a href="https://wa.me/26773263804?text=Hello%20CIPA%2C%20I%20need%20help%20with%20constitutions%20and%20beneficial%20ownership%20filing." target="_blank" rel="noopener" aria-label="Chat to CIPA on WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-xl transition hover:scale-105">
+<svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.588-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.199.534 1.286.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.086-.177.18-.076.353.101.173.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824zM.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"></path></svg>
+</a>
+<button data-to-top class="hidden fixed bottom-24 right-7 z-40 w-11 h-11 rounded-full bg-[#0266b3] hover:bg-[#014f8c] text-white shadow-lg items-center justify-center transition" aria-label="Back to top" type="button">
+<svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+</button>
+<script src="site-search.js"></script>
 </body></html>
